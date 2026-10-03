@@ -12,6 +12,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `server-hardening.sh` | UFW firewall, Fail2Ban, SSH hardening basics |
 | `backup-wordpress.sh` | Backs up a WordPress site (files + database) with 7-day retention |
 | `add-swap.sh` | Creates a swapfile on low-RAM VPS (default 2GB, swappiness=10) — prevents OOM kills on 1GB boxes |
+| `optimize-mysql.sh` | Auto-tunes MySQL/MariaDB buffers from detected RAM (run as root, safe to re-run) |
 
 ## Quick start
 
