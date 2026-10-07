@@ -14,6 +14,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `add-swap.sh` | Creates a swapfile on low-RAM VPS (default 2GB, swappiness=10) — prevents OOM kills on 1GB boxes |
 | `optimize-mysql.sh` | Auto-tunes MySQL/MariaDB buffers from detected RAM (run as root, safe to re-run) |
 | `server-status.sh` | Generates a one-page HTML server health report (load, memory, disk, services, ports, SSL expiry) |
+| `install-redis-object-cache.sh` | Installs + hardens Redis (localhost, password, FLUSHALL disabled) and wires the WP object-cache drop-in (`--wp-path` required) |
 
 ## Quick start
 
