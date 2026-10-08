@@ -15,6 +15,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `optimize-mysql.sh` | Auto-tunes MySQL/MariaDB buffers from detected RAM (run as root, safe to re-run) |
 | `server-status.sh` | Generates a one-page HTML server health report (load, memory, disk, services, ports, SSL expiry) |
 | `install-redis-object-cache.sh` | Installs + hardens Redis (localhost, password, FLUSHALL disabled) and wires the WP object-cache drop-in (`--wp-path` required) |
+| `clone-wordpress-staging.sh` | Clones a live WordPress site to staging: rsync files, new `_staging` DB, fresh salts, URL rewrite, search-indexing disabled |
 
 ## Quick start
 
