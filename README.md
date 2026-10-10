@@ -17,6 +17,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `install-redis-object-cache.sh` | Installs + hardens Redis (localhost, password, FLUSHALL disabled) and wires the WP object-cache drop-in (`--wp-path` required) |
 | `clone-wordpress-staging.sh` | Clones a live WordPress site to staging: rsync files, new `_staging` DB, fresh salts, URL rewrite, search-indexing disabled |
 | `tune-php-fpm.sh` | Auto-tunes PHP-FPM pool (dynamic, RAM-based `max_children`) + production OPcache drop-in; backs up config, dry-run confirm by default |
+| `renew-letsencrypt.sh` | Safe `certbot renew` wrapper — deploy hook reloads nginx/apache/OpenLiteSpeed only when a cert actually renews, email alert on failure (`--dry-run`, `--email`, `--webserver`) |
 
 ## Quick start
 
