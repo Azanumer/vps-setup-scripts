@@ -20,6 +20,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `renew-letsencrypt.sh` | Safe `certbot renew` wrapper — deploy hook reloads nginx/apache/OpenLiteSpeed only when a cert actually renews, email alert on failure (`--dry-run`, `--email`, `--webserver`) |
 | `configure-ufw.sh` | Idempotent UFW hardening — deny-in/allow-out, rate-limited SSH, HTTP/HTTPS open, SSH-port guard so you never lock yourself out (`--ssh-port`, `--allow-extra`) |
 | `install-wordpress.sh` | One-shot WordPress installer — Nginx vhost + PHP-FPM + MariaDB (least-privilege DB user) + wp-cli + fresh salts + permalinks + Certbot SSL (`--domain`, `--email` required; secrets generated if omitted) |
+| `migrate-wordpress.sh` | One-shot WP migration: `--export` tars wp-content + DB dump + URL manifest; `--import` restores files, creates DB/user, rewrites URLs (wp-cli or serialized-safe PHP fallback), refreshes salts |
 
 ## Quick start
 
