@@ -21,6 +21,7 @@ Bash scripts for getting a fresh Ubuntu VPS production-ready: LEMP stack, harden
 | `configure-ufw.sh` | Idempotent UFW hardening — deny-in/allow-out, rate-limited SSH, HTTP/HTTPS open, SSH-port guard so you never lock yourself out (`--ssh-port`, `--allow-extra`) |
 | `install-wordpress.sh` | One-shot WordPress installer — Nginx vhost + PHP-FPM + MariaDB (least-privilege DB user) + wp-cli + fresh salts + permalinks + Certbot SSL (`--domain`, `--email` required; secrets generated if omitted) |
 | `migrate-wordpress.sh` | One-shot WP migration: `--export` tars wp-content + DB dump + URL manifest; `--import` restores files, creates DB/user, rewrites URLs (wp-cli or serialized-safe PHP fallback), refreshes salts |
+| `ssh-access-manager.sh` | Safe SSH key management — add/list/remove/revoke `--user` keys, `managed:<label>` tagging, ssh-keygen validation, timestamped backups, strict perms (offboarding-friendly `--revoke-all`) |
 
 ## Quick start
 
